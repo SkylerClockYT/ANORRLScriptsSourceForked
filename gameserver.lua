@@ -43,38 +43,15 @@ function onChatted(msg, speaker)
     end
 	if game:GetService("Players").ArbysChibkenEnabled then
 		if msg == "arbys chibken" then
-			if speaker.userId == 43 then
-				local brightness = game:GetService("Lighting").Brightness
-				local sound = Instance.new("Sound")
-				sound.SoundId = "rbxassetid://5313"
-				sound.Volume = 0.5
-				local playerr = speaker.Character
-				sound.Parent = playerr
-				sound:Play()
-				wait(1.17)
-				game:GetService("Lighting").Brightness = 1.79769e+308
-				local sound = Instance.new("Sound")
-				sound.SoundId = "rbxassetid://5314"
-				sound.Volume = 0.5
-				sound.Parent = playerr
-				sound:Play()
-				local explosion = Instance.new("Explosion")
-				explosion.Position = playerr.Torso.Position
-				explosion.Parent = playerr.Torso
-				explosion.BlastPressure = 5000000
-				wait(0.2)
-				game:GetService("Lighting").Brightness = brightness
-			else
-				local sound = Instance.new("Sound")
-				sound.SoundId = "rbxassetid://327"
-				sound.Volume = 0.5
-				sound.Parent = speaker.Character
-				sound:Play()
-				wait(2)
-				local explosion = Instance.new("Explosion")
-				explosion.Position = speaker.Character.Torso.Position
-				explosion.Parent = speaker.Character.Torso
-			end
+			local sound = Instance.new("Sound")
+			sound.SoundId = "rbxassetid://327"
+			sound.Volume = 0.5
+			sound.Parent = speaker.Character
+			sound:Play()
+			wait(2)
+			local explosion = Instance.new("Explosion")
+			explosion.Position = speaker.Character.Torso.Position
+			explosion.Parent = speaker.Character.Torso
 		end
 	end
 end
