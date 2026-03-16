@@ -475,7 +475,7 @@ if not isCloudEdit then
 					mannrobics = "rbxassetid://1383",
 					gangnam = "rbxassetid://2136",
 					gmod = "rbxassetid://2140",
-					cryforme = "rbxassetid://3239"
+					cryforme = "rbxassetid://3239",
 					jumpstyle = "rbxassetid://7454"
 				}
 
